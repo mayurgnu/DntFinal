@@ -16,7 +16,7 @@ export class RegisterComponent implements OnInit {
   public TableData: any;
   public product = new Product;
   public obj = new Product;
-  //=====kv=========
+  //=====kvd=========
   public gender = 'female';
   public isActive = true;
   department = 3;
