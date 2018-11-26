@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TestService } from 'src/app/Service/test.service';
 import { Product } from 'src/app/Model/Model';
-
+// import { BsDatepickerConfig } from 'ngx-bootstrap/';
 
 @Component({
   selector: 'app-register',
@@ -16,10 +16,16 @@ export class RegisterComponent implements OnInit {
   public TableData: any;
   public product = new Product;
   public obj = new Product;
+  //=====kv=========
+  public gender = 'female';
+  public isActive = true;
+  department = 3;
+    // datePickerConfig: Partial<BsDatepickerConfig>;
+  // ===kv=========
   public divTableShow;
   constructor(private testService: TestService) {
     this.product = new Product();
-    this.divTableShow = true;
+    this.divTableShow = false;
   }
 
   ngOnInit() {
